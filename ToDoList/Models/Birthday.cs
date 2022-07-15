@@ -1,22 +1,23 @@
 using System;
 using System.Collections.Generic;
 
-namespace Mo.Models
+namespace Bd.Models
 {
   public class Birthday
   {
     public int Year { get; set; }
     
     // constructor
-    public Birthday(int dob)
+    public Birthday(int userInput)
     {
-      Year = dob;
+      Year = userInput;
     }
 
-    public void age() {
+    public int age() {
       int currentYear = 2022;
       int finalAge = currentYear - Year;
-      Console.WriteLine(finalAge);
+      return finalAge;
+      // Console.WriteLine("year");
     }
   }
 }
